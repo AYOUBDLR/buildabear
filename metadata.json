@@ -1,0 +1,6 @@
+{
+  "name": "Claim Discount - Instant Store Voucher",
+  "description": "Claim instant verified discount codes and store vouchers without surveys or reward programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
