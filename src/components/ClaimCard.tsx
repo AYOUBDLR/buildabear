@@ -40,7 +40,7 @@ export const ClaimCard: React.FC<ClaimCardProps> = ({ config, onResetOffer }) =>
 
     // Dynamic generated code
     const randomSuffix = Math.floor(1000 + Math.random() * 9000);
-    const newCode = `SAVE${config.discountValue}-${randomSuffix}`;
+    const newCode = `DISCOUNT-${randomSuffix}`;
     setGeneratedCode(newCode);
 
     // Realistic verification generator steps
@@ -110,7 +110,7 @@ export const ClaimCard: React.FC<ClaimCardProps> = ({ config, onResetOffer }) =>
                 Generating Single-Use Allocation
               </h3>
               <p className="text-xs text-slate-500 max-w-xs mx-auto">
-                No survey required. Allocating instant discount code to your browser session...
+                Allocating instant discount code to your browser session...
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export const ClaimCard: React.FC<ClaimCardProps> = ({ config, onResetOffer }) =>
               </div>
               <div className={`flex items-center gap-2 ${verificationStep >= 3 ? 'text-emerald-700 font-semibold' : 'text-slate-400'}`}>
                 <CheckCircle2 className="w-4 h-4" />
-                <span>Validating {config.discountValue}% store discount</span>
+                <span>Validating store discount voucher</span>
               </div>
             </div>
           </div>
@@ -169,9 +169,9 @@ export const ClaimCard: React.FC<ClaimCardProps> = ({ config, onResetOffer }) =>
               </div>
             </div>
 
-            {/* Description explicitly clarifying NO survey or reward program needed */}
+            {/* Description */}
             <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-md mx-auto">
-              Claim your instant promotional discount code directly to your device. No survey or sign-up required — valid for all orders today.
+              Claim your instant promotional discount code directly to your device — valid for all orders today.
             </p>
 
             {/* Urgency Countdown Pill */}
@@ -197,7 +197,7 @@ export const ClaimCard: React.FC<ClaimCardProps> = ({ config, onResetOffer }) =>
               </button>
             </div>
 
-            {/* Micro Trust Indicators (Secure, Instant Code, Zero Survey) */}
+            {/* Micro Trust Indicators (Secure, Instant Code, Instant Access) */}
             <div className="pt-1 flex items-center justify-center gap-4 sm:gap-6 text-xs text-slate-500 flex-wrap">
               <span className="inline-flex items-center gap-1.5 hover:text-slate-700 transition-colors">
                 <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
@@ -209,7 +209,7 @@ export const ClaimCard: React.FC<ClaimCardProps> = ({ config, onResetOffer }) =>
               </span>
               <span className="inline-flex items-center gap-1.5 hover:text-slate-700 transition-colors">
                 <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-                <span>Zero Survey</span>
+                <span>Instant Access</span>
               </span>
             </div>
           </div>

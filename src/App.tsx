@@ -18,10 +18,10 @@ import { CheckCircle2 } from 'lucide-react';
 const INITIAL_CONFIG: DiscountConfig = {
   storeName: 'Build-A-Bear',
   discountType: 'percentage',
-  discountValue: 40,
-  discountHeadline: '🏷️ 40% OFF Discount',
+  discountValue: 0,
+  discountHeadline: '🏷️ Claim Discount',
   initialSeconds: 638, // 10 minutes 38 seconds as shown in reference image
-  promoCode: 'SAVE40-TODAY',
+  promoCode: 'DISCOUNT-TODAY',
   freeShipping: true
 };
 
@@ -35,13 +35,13 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] text-slate-900 flex flex-col relative overflow-x-hidden">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col relative overflow-x-hidden">
       {/* Atmospheric Background with Subtle Grid & Floating Motifs */}
       <BackgroundGrid />
 
-      {/* Main Content Area */}
-      <main className="flex-1 flex flex-col items-center justify-start px-4 pt-10 sm:pt-14 pb-16 relative z-10 max-w-4xl mx-auto w-full">
-        {/* Circular Brand Seal / Emblem (As in top of reference image) */}
+      {/* Main Mobile-Optimized Content Area */}
+      <main className="flex-1 flex flex-col items-center justify-start px-4 pt-8 sm:pt-12 pb-16 relative z-10 max-w-md sm:max-w-xl mx-auto w-full">
+        {/* Circular Brand Seal / Emblem (Build-A-Bear Logo) */}
         <BrandBadge storeName={config.storeName} />
 
         {/* Social Proof: 4 Overlapping Avatar Circles + Claimed Counter */}
@@ -55,12 +55,12 @@ export default function App() {
           />
         </div>
 
-        {/* Feature Trio: 3 Yellow Rounded Squares (As in bottom of reference image) */}
+        {/* Feature Trio: 3 Yellow Rounded Squares */}
         <div className="w-full mt-2">
           <FeatureTrio />
         </div>
 
-        {/* Verified Footer (As in reference image) */}
+        {/* Verified Footer */}
         <footer className="mt-8 flex flex-col items-center justify-center gap-2 text-center text-xs text-slate-500">
           <div className="flex items-center gap-3">
             <span>Made with love.</span>
@@ -87,7 +87,7 @@ export default function App() {
             </button>
           </div>
           <div className="text-[11px] text-slate-400">
-            © {config.storeName} Workshop 2025 · Instant Claim Guaranteed
+            © {config.storeName} Workshop 2025 · Mobile Voucher Portal
           </div>
         </footer>
       </main>

@@ -23,15 +23,15 @@ export const ClaimedVoucher: React.FC<ClaimedVoucherProps> = ({ config, onReset,
           Your Discount Voucher is Ready!
         </h3>
         <p className="text-slate-600 text-sm mt-1 max-w-md">
-          Use code at checkout for <span className="font-bold text-slate-900">{config.discountValue}% OFF</span> {config.storeName} orders. No survey or minimum required.
+          Use code at checkout for your {config.storeName} orders — valid for all purchases today.
         </p>
       </div>
 
       {/* Main Ticket / Coupon Card */}
       <div className="relative bg-gradient-to-b from-amber-50/70 to-white rounded-2xl border-2 border-dashed border-amber-300 p-5 sm:p-6 shadow-sm overflow-hidden">
         {/* Ticket notch cutouts */}
-        <div className="absolute -left-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#f8fafc] border-r-2 border-dashed border-amber-300" />
-        <div className="absolute -right-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#f8fafc] border-l-2 border-dashed border-amber-300" />
+        <div className="absolute -left-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white border-r-2 border-dashed border-amber-300" />
+        <div className="absolute -right-3.5 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-white border-l-2 border-dashed border-amber-300" />
 
         <div className="flex flex-col items-center">
           <div className="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100/90 px-3 py-0.5 rounded-full mb-3">

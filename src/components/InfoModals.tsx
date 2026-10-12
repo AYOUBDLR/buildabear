@@ -35,9 +35,9 @@ export const InfoModals: React.FC<InfoModalProps> = ({ type, onClose, storeName 
                   1
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900">Click &apos;Claim My Discount&apos;</h4>
+                  <h4 className="font-bold text-slate-900">Click &apos;Claim Discount&apos;</h4>
                   <p className="text-xs text-slate-500 mt-0.5">
-                    No survey questions, no demographic forms, no reward point accounts. Just tap the button to initiate your verified allocation.
+                    Just tap the button to initiate your instant verified allocation directly to your device.
                   </p>
                 </div>
               </div>
@@ -69,9 +69,9 @@ export const InfoModals: React.FC<InfoModalProps> = ({ type, onClose, storeName 
           ) : (
             <div className="space-y-3.5">
               <div>
-                <h4 className="font-bold text-slate-900">Do I really not need to fill out a survey?</h4>
+                <h4 className="font-bold text-slate-900">How do I claim my discount?</h4>
                 <p className="text-xs text-slate-500 mt-0.5">
-                  Yes, 100% survey-free. Unlike other reward programs that ask 20 questions, our promotional discount claim allocates the voucher instantly.
+                  Simply tap the Claim Discount button and your single-use code is immediately generated and ready to use.
                 </p>
               </div>
 

@@ -3,12 +3,12 @@ import { Tag, X } from 'lucide-react';
 import { ClaimEvent } from '../types.ts';
 
 const SAMPLE_CLAIMS: Omit<ClaimEvent, 'id' | 'timeAgo'>[] = [
-  { name: 'Sarah M.', city: 'Austin, TX', discount: '40% OFF' },
-  { name: 'David K.', city: 'Chicago, IL', discount: '50% OFF' },
-  { name: 'Chloe L.', city: 'Seattle, WA', discount: '$50 Voucher' },
-  { name: 'Marcus B.', city: 'Miami, FL', discount: '45% OFF' },
-  { name: 'Hannah R.', city: 'Denver, CO', discount: '40% OFF' },
-  { name: 'Liam P.', city: 'San Diego, CA', discount: '35% OFF' }
+  { name: 'Sarah M.', city: 'Austin, TX', discount: 'Store Discount' },
+  { name: 'David K.', city: 'Chicago, IL', discount: 'Verified Voucher' },
+  { name: 'Chloe L.', city: 'Seattle, WA', discount: 'Promotional Voucher' },
+  { name: 'Marcus B.', city: 'Miami, FL', discount: 'Store Discount' },
+  { name: 'Hannah R.', city: 'Denver, CO', discount: 'Verified Voucher' },
+  { name: 'Liam P.', city: 'San Diego, CA', discount: 'Promotional Voucher' }
 ];
 
 export const LiveClaimToasts: React.FC = () => {

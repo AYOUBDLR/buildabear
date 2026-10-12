@@ -42,7 +42,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose, storeNa
             <div>
               <p className="font-semibold text-blue-950">Official Single-Click Discount</p>
               <p className="text-xs text-blue-800 mt-0.5">
-                This promotional voucher is issued directly with no questionnaire, questionnaire scoring, survey loops, or subscription traps.
+                This promotional voucher is issued directly and securely to your session with no waiting period.
               </p>
             </div>
           </div>
@@ -56,7 +56,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose, storeNa
                 <strong>Immediate Activation:</strong> Promotional voucher codes are unlocked instantaneously upon clicking the claim button.
               </li>
               <li>
-                <strong>No Mandatory Survey:</strong> Customers are never required to complete marketing surveys or rewards points programs to redeem.
+                <strong>Instant Redemption:</strong> Verified single-use vouchers are applied directly at checkout.
               </li>
               <li>
                 <strong>Storewide Applicability:</strong> Valid across standard product collections at {storeName} checkout, subject to merchant terms.
