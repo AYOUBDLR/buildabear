@@ -9,7 +9,6 @@ import { BrandBadge } from './components/BrandBadge.tsx';
 import { SocialProofAvatars } from './components/SocialProofAvatars.tsx';
 import { ClaimCard } from './components/ClaimCard.tsx';
 import { FeatureTrio } from './components/FeatureTrio.tsx';
-import { LiveClaimToasts } from './components/LiveClaimToasts.tsx';
 import { TermsModal } from './components/TermsModal.tsx';
 import { InfoModals } from './components/InfoModals.tsx';
 import { DiscountConfig } from './types.ts';
@@ -91,9 +90,6 @@ export default function App() {
           </div>
         </footer>
       </main>
-
-      {/* Real-Time Live Claims Toast (Bottom-Left) */}
-      <LiveClaimToasts />
 
       {/* Terms and Verification Modal */}
       <TermsModal
